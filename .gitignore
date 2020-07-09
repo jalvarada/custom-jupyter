@@ -77,7 +77,7 @@ target/
 .ipynb_checkpoints/
 
 # Jupyter notebooks
-.ipynb
+*.ipynb
 
 # exclude data from source control by default
 /data/
