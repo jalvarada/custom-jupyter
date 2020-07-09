@@ -38,7 +38,8 @@ RUN pip install -r requirements.txt && \
     jupyter nbextension enable --py widgetsnbextension && \
     jupyter nbextension enable jupyter_bokeh --py --sys-prefix && \
     jupyter nbextension install --py --sys-prefix jupytext && \
-    jupyter nbextension enable --py --sys-prefix jupytext
+    jupyter nbextension enable --py --sys-prefix jupytext && \
+    jupytext --set-formats ipynb,py *.ipynb
 
 # expose jupyter port
 EXPOSE 8000
@@ -52,8 +53,7 @@ RUN useradd -ms /bin/bash josue && \
     mkdir /home/josue/.jupyter/nbconfig && \
     # grant permissions to user for .jupyter
     chown josue home/josue/.jupyter && \
-    chmod +x home/josue/.jupyter && \
-    jupytext --set-formats ipynb,py /home/josue/work/*.py
+    chmod +x home/josue/.jupyter
 
 # declare a volume for reference
 VOLUME /home/josue/work
