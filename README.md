@@ -4,6 +4,15 @@
 
 I decided to learn how to create docker images (mine probably sucks but it works) and play a bit with nice jupyter extensions focused on a better programming experience.
 
+How to use this the custom-jupyter image
+
+1. Clone repo
+2. Set current directory to repo
+3. Run `docker-compose build`
+4. Run `docker-compose -d up`
+5. Go to localhost:8888
+6. Run `docker-compose stop`
+
 # Contents
 
 1. [**_Docker and Jupyter_**](#Docker-and-Jupyter)
@@ -16,7 +25,7 @@ I decided to learn how to create docker images (mine probably sucks but it works
 
 [Back to Contents](#Contents)
 
-Still pending description, but just pay attenttion to `jupyter_notebook_config.py` and `docker-compose.yml`. 
+Still pending description, but just pay attenttion to `jupyter_notebook_config.py` and `docker-compose.yml`.
 
 # Custom Jupyter Theme
 
