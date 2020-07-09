@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  jupyter:
+    build: .
+    image: josue/jupyter:dev
+    container_name: "jupyter"
+    command: jupyter notebook
+    volumes:
+      - ./:/home/josue/work
+      - ./.jupyter:/home/josue/.jupyter
+    ports:
+      - 8888:8888
