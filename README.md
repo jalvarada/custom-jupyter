@@ -7,8 +7,9 @@ I decided to learn how to create docker images (mine probably sucks but it works
 # Contents
 
 1. [**_Custom Jupyter Theme_**](#Custom-Jupyter-Theme)
-2. [**_nb_extensions_**](#nb_extensions)
-3. [**_Better Version Control with jupytext_**](#Better-Version-Control-with-jupytext)
+2. [**_Code Line Numbering_**](#Code-Line-Numbering)
+3. [**_nb_extensions_**](#nb_extensions)
+4. [**_Better Version Control with jupytext_**](#Better-Version-Control-with-jupytext)
 
 # Custom Jupyter Theme
 
@@ -19,6 +20,22 @@ I tried to use [jupyter themes](https://github.com/dunovank/jupyter-themes) in a
 [Eduardo VieIra](https://eduardojvblog.wordpress.com/2017/11/27/cambia-la-apariencia-del-jupyter-notebook-usando-temas-en-css/) has a nice article on this topic and shows us an example on how he did it. I don't know much of `css` so I'm using his `custom.css`. Thanks Eduardo.
 
 ![](./images/custom_theme.png)
+
+# Code Line Numbering
+
+[Back to Contents](#Contents)
+
+To modify some of the default notebook behaviour, you can do it by add the appropriate json into a `.jupyter/nbconfig/notebook.json` file. For default code line numbering:
+
+```json
+{
+  "CodeCell": {
+    "cm_config": {
+      "lineNumbers": true
+    }
+  }
+}
+```
 
 # nb_extensions
 
