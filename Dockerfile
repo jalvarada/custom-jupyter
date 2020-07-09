@@ -39,7 +39,7 @@ RUN pip install -r requirements.txt && \
     jupyter nbextension enable jupyter_bokeh --py --sys-prefix && \
     jupyter nbextension install --py --sys-prefix jupytext && \
     jupyter nbextension enable --py --sys-prefix jupytext && \
-    jupytext --set-formats ipynb,py *.ipynb
+    jupytext --set-formats ipynb,md *.ipynb
 
 # expose jupyter port
 EXPOSE 8000

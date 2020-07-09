@@ -6,10 +6,17 @@ I decided to learn how to create docker images (mine probably sucks but it works
 
 # Contents
 
-1. [**_Custom Jupyter Theme_**](#Custom-Jupyter-Theme)
-2. [**_Code Line Numbering_**](#Code-Line-Numbering)
-3. [**_nb_extensions_**](#nb_extensions)
-4. [**_Better Version Control with jupytext_**](#Better-Version-Control-with-jupytext)
+1. [**_Docker and Jupyter_**](#Docker-and-Jupyter)
+2. [**_Custom Jupyter Theme_**](#Custom-Jupyter-Theme)
+3. [**_Code Line Numbering_**](#Code-Line-Numbering)
+4. [**_nb_extensions_**](#nb_extensions)
+5. [**_Better Version Control with jupytext_**](#Better-Version-Control-with-jupytext)
+
+# Docker and Jupyter
+
+[Back to Contents](#Contents)
+
+Still pending description, but just pay attenttion to `jupyter_notebook_config.py` and `docker-compose.yml`. 
 
 # Custom Jupyter Theme
 
