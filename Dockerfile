@@ -52,7 +52,8 @@ RUN useradd -ms /bin/bash josue && \
     mkdir /home/josue/.jupyter/nbconfig && \
     # grant permissions to user for .jupyter
     chown josue home/josue/.jupyter && \
-    chmod +x home/josue/.jupyter
+    chmod +x home/josue/.jupyter && \
+    jupytext --set-formats ipynb,py /home/josue/work/*.py
 
 # declare a volume for reference
 VOLUME /home/josue/work
